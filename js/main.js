@@ -24,7 +24,7 @@ function calculate(amount) {
     const yearlyTaxesProfit = yearlyTaxes / 100 * 10;
     const userProfit = yearlyTaxes - yearlyTaxesProfit;
     
-document.querySelector(".total-outcome").innerHTML = `Totaal bedrag inclusief(met) 21% btw: €${totalValueWithTax.toFixed(2)} <br><br> bedrag btw: €${taxValue.toFixed(2)}`
+document.querySelector(".total-outcome").innerHTML = `Totaal bedrag inclusief(met) 21% btw: €${totalValueWithTax.toFixed(2)} <br><br> bedrag die moet aan btw: €${taxValue.toFixed(2)}`
 document.querySelector(".young-ones-profit").textContent = `Bedrag die YoungOnes moet krijgen: €${youngOnesProfitTax.toFixed(2)}`
 document.querySelector(".yearly-tax").textContent = `Bedrag die voor inkomstenbelasting moet bewaren: €${yearlyTaxesProfit.toFixed(2)}`
 document.querySelector(".user-profit").textContent = `Jouw nieuwe bedrag: €${userProfit.toFixed(2)}`
